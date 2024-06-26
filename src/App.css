@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.topcontainer{
+  width: 80%;
+  height: 500px;
+  position: relative;
+
+}
+
+.main-container{
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 100%;
+  width: 100%;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+.bar{
+  flex: 1;
+  position: relative;
+}
+.tooltip{
+  opacity: 0;
+  position: absolute;
+  background-color: black;
+  color: beige;
+  right: 50%;
+  transform: translateX(50%) translateY(-120%);
+  padding: 4px;
+  width: max-content;
+  transition: opacity 0.2s ease-in-out;
+}
+.bar:hover .tooltip{
+  opacity: 1;
+}
+.y-axis-label{
+  position: absolute;
+  transform:  translateY(-50%) translateX(-50%) rotate(-90deg) ;
+  top: 50%;
+  margin: 10px;
+}
+.x-axis-label{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 20px;
+  
+}
